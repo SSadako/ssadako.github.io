@@ -1,0 +1,75 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color:#282a36;
+}
+img{
+    max-width: 100%;
+}
+
+/*SPLIDE*/
+.slider_wrapper{
+    padding: 50px 15px;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.splide__arrow{
+display: none;
+}
+.slider_wrapper .splide_pagination_page.is-active{
+    opacity: 1;
+    background-color: #ffae3d;
+}
+@media screen and (min-width: 640px){
+    .slider_wrapper .splide{
+        padding: 0 4 rem;
+    }
+}
+
+/*DROPDOWN CHAPTERLIST BUTTON*/
+.dropbtn {
+    background-color: #282a36;
+    font-family: cursive;
+    color: #ffae3d;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    color: #ffdbaa;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #303030;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    font-family: cursive;
+    color: #ffae3d;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
